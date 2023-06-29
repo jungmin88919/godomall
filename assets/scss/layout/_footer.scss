@@ -1,0 +1,119 @@
+.footer{
+    background: #101010;
+
+    @include tablet{
+        padding: 0 38px;
+    }
+
+    &-box__top{
+        background: #ffd600;
+        border-radius: 60px;
+        padding: 104px 20px 73px 107px;
+
+        @include mo{
+            padding: 30px 20px 30px;
+            border-radius: 30px;
+        }
+
+        .headline{
+            font-size: 64px;
+
+            @include tablet{
+                font-size: 46px;
+            }
+
+            @include mo{
+                font-size: 32px;
+                line-height: 1.4;
+            }
+        }
+    }
+    &-box__text{
+        font-size: 14px;
+        max-width: 385px;
+        margin: 10px 0 35px;
+        color: #101010;
+        line-height: 1.87;
+    }
+
+    .btn-common.btn-black{
+        
+
+        .button{
+            color: #fff;
+            font-size: 14px;
+            background: #040404;
+            
+            &:hover{
+                border: 1px solid #040404;
+                background: #fff;
+                color: #000;
+            }
+        }
+    }
+
+    &-box__bottom{
+        text-align: center;
+        padding: 132px 0 116px;
+
+        .email{
+            font-size: 46px;
+            color: #fff;
+            font-weight: 400;
+            font-family: Tan-Official;
+
+            @include mo{
+                font-size: 32px;
+                line-height: 1.4;
+            }
+        }
+    }
+
+    &-box__copy{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        margin: 20px 0 30px;
+    }
+
+    &-box__logo{
+        img{
+            margin: 0 auto;
+        }
+    }
+}
+
+.wrap.dark{
+    .footer{
+        background: #ffd600;
+
+        &-box__top{
+            background: #000;
+
+            .headline{
+                color: #fff;
+
+            }
+        }
+        &-box__text{
+            color: #fff;    
+        }
+
+        .btn-common.btn-black{
+        
+
+            .button{
+                color: #000;
+                font-size: 14px;
+                background: #fff;
+                
+                &:hover{
+                    border: 1px solid #040404;
+                    background: #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
